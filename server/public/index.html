@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Server Side Calculator</title>
+        <script src="client.js"></script>
+    </head>
+    <body>
+        <h1>Server Side Calculator</h1>
+        <form id="submitForm" onsubmit="submitForm(event)">
+            <input id="inputValueOne" name="inputOne" type="number" placeholder="Value One">
+            <input id="arithmetic" name="inputOperator" type="text" placeholder="+, -, /, *"> 
+            <input id="inputValueTwo" name="inputTwo" type="number" placeholder="Value Two">
+            <button>=</button>
+        </form>
+        <button onclick="clearOnSubmit(event)">Clear</button>
+        <div id="contentDiv"></div>
+   </body>
+</html>
+
